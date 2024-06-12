@@ -1,0 +1,275 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+:root {
+  --primary-color: #00369a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+/***======header part====================*/
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(0, 102, 255);
+  height: 50px;
+  padding: 0px 10px;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.login_container,
+.logout_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+}
+.buttons-container {
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  display: flex;
+  gap: 10px;
+  padding: 5px;
+}
+#post,
+#sign-in {
+  border: none;
+  font-size: 15px;
+  padding: 7px 10px;
+  border-radius: 5px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  cursor: pointer;
+}
+#post:hover,
+#sign-in:hover {
+  padding: 10px 12px;
+}
+.form_container,
+.loginForm,
+.post-data {
+  width: 500px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  padding: 50px;
+  gap: 25px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  position: absolute;
+  top: 100px;
+  left: 150px;
+}
+.post-data {
+  height: auto;
+}
+input {
+  padding: 7px;
+  font-size: 15px;
+}
+
+/*==========buttons===========*/
+.create_button,
+.deposit_btn,
+.play,
+.submit {
+  background-color: green;
+  padding: 8px 10px;
+  border-radius: 4px;
+  font-weight: bolder;
+  color: white;
+  border-radius: 5px;
+  width: 150px;
+  border: none;
+  margin-top: 10px;
+}
+.create_button:hover,
+.deposit_btn:hover,
+.play:hover,
+.submit:hover {
+  padding: 10px 12px;
+}
+body {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(120, 168, 246, 0.7),
+      rgba(180, 224, 244, 0.1)
+    ),
+    url("../images/back.jfif");
+  background-size: cover;
+}
+.home-container,
+.details-container {
+  width: 100%;
+  margin: auto;
+}
+
+.logo-title > img {
+  width: 200px;
+  height: 200px;
+}
+.home-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 0;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.main-container {
+  margin: 0 auto;
+  max-width: 100%;
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+.filter {
+  width: 17%;
+  overflow-y: auto;
+}
+.size,
+.price {
+  padding: 2px 2px 2px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.price {
+  gap: 10px;
+}
+.price > div {
+  display: flex;
+  gap: 5px;
+}
+.size > button {
+  padding: 5px;
+  font-size: 17px;
+  border: none;
+  text-align: left;
+  background-color: transparent;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.size > button:hover {
+  background-color: gray;
+}
+
+.prize-input {
+  font-size: 17px;
+  width: 100px;
+}
+main {
+  width: 83%;
+}
+
+h1 {
+  margin-top: 200px;
+  padding: 5px 0;
+  font-size: 3.7rem;
+  color: #111;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.home-top > input {
+  padding: 12px 20px;
+  font-size: 16px;
+  border: solid 2px #f0f0f0;
+  border-radius: 50px;
+  outline: none;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#searchResult {
+  margin-top: 1rem;
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  width: inherit;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/*=====single house style=====*/
+.singleH {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff6ea;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 5px;
+  width: 250px;
+}
+.singleH:hover {
+  cursor: pointer;
+  width: 255px;
+}
+.priceCont,
+.locationCont {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 10px;
+}
+img {
+  border-radius: 5px 5px 0px 0px;
+  width: inherit;
+  height: 150px;
+}
+
+/*====details container====*/
+.details-container {
+  padding: 20px;
+  display: flex;
+  gap: 30px;
+  width: 100%;
+  justify-content: center;
+}
+table {
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+td,
+th {
+  border: 1px solid black;
+  padding: 5px;
+}
+#company-name {
+  font-size: 30px;
+}
+#house-image {
+  width: 500px;
+  height: 500px;
+}
+/*===hide class===*/
+.hide {
+  display: none;
+}
+h3 {
+  margin-top: 13px;
+  margin-bottom: 5px;
+}
+#go-back {
+  background-color: green;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  padding: 5px;
+}

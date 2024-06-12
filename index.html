@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>REAL STATE</title>
+    <!--external stylesheet-->
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body id="body">
+    <header>
+      <button id="go-back" class="hide">Go Back</button>
+      <div class="buttons-container">
+        <button id="post">Post</button>
+        <button id="sign-in">SignIn</button>
+      </div>
+    </header>
+    <!--top home container-->
+    <div class="home-container" id="home-container">
+      <div class="home-top">
+        <!-- user form-->
+        <div class="form_container hide" id="form">
+          <div>
+            <label for="username">User name:</label>
+            <input type="text" id="username" />
+          </div>
+          <div>
+            <label for="password:">Password</label>
+            <input type="password" id="password" />
+          </div>
+          <button class="submit" id="create">Create Account</button>
+        </div>
+
+        <!--log in form-->
+        <div class="loginForm hide" id="loginForm">
+          <div>
+            <label for="username">User name:</label>
+            <input type="text" id="checkUsername" />
+          </div>
+          <div>
+            <label for="password:">Password</label>
+            <input type="password" id="checkPassword" />
+          </div>
+          <button class="submit" id="checkAccount">Log In</button>
+        </div>
+
+        <div class="post-data hide" id="postData">
+          <div>
+            <label for="comp">Company Name</label>
+            <input type="text" id="comp" />
+          </div>
+          <div>
+            <label for="loc">Location</label>
+            <input type="text" id="loc" />
+          </div>
+          <div>
+            <label for="loc">Price</label>
+            <input type="text" id="per" />
+          </div>
+          <div>
+            <label for="numberOfBeds">Beds</label>
+            <input type="text" id="numberOfBeds" />
+          </div>
+          <div>
+            <label for="numberOfBaths">Baths</label>
+            <input type="text" id="numberOfBaths" />
+          </div>
+          <div>
+            <label for="parking">Parkings</label>
+            <input type="text" id="parking" />
+          </div>
+          <button class="submit" id="submit">submit</button>
+        </div>
+        <div id="logo">
+          <h1>Ethiopian Real State</h1>
+        </div>
+        <input
+          class="search-bar"
+          type="text"
+          name="searchTerm"
+          id="searchTerm"
+          placeholder="Search Ethiopian real state..."
+        />
+      </div>
+      <div class="main-container">
+        <div class="hide" id="filter-container">
+          <h2>Filter</h2>
+
+          <div class="by-size">
+            <h3>By Size</h3>
+            <div class="size">
+              <button id="large">large</button>
+              <button id="medium">Medium</button>
+              <button id="small">small</button>
+            </div>
+          </div>
+          <div class="by-price">
+            <h3>By Price</h3>
+            <div class="price">
+              <div>
+                <span style="font-size: 25px; line-height: 25px">&ge;</span>
+                <input type="text" class="prize-input" id="gt" />
+              </div>
+              <div>
+                <span style="font-size: 25px; line-height: 25px">&le;</span>
+                <input type="text" class="prize-input" id="lt" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <main id="searchResult"></main>
+      </div>
+    </div>
+    <div class="hide" id="details-container">
+      <div class="property-1">
+        <h2>Detail Informations</h2>
+        <h3>Features:</h3>
+        <ul id="features"></ul>
+        <h3>Property Details</h3>
+        <table>
+          <tr>
+            <th>Price:</th>
+            <td id="pr"></td>
+          </tr>
+          <tr>
+            <th>Square footage:</th>
+            <td id="dimension"></td>
+          </tr>
+          <tr>
+            <th>Bedrooms:</th>
+            <td id="beds"></td>
+          </tr>
+          <tr>
+            <th>Bathrooms:</th>
+            <td id="baths"></td>
+          </tr>
+          <tr>
+            <th>Parking:</th>
+            <td id="parking"></td>
+          </tr>
+          <tr>
+            <th>Year Built:</th>
+            <td id="year"></td>
+          </tr>
+        </table>
+        <h3>Contact Information</h3>
+        <ul id="contacts"></ul>
+      </div>
+      <div class="property-2">
+        <p id="company-name"></p>
+        <img id="house-image" src=" " alt="House Image" width="500" />
+        <p>Located in <span id="loc"></span></p>
+      </div>
+    </div>
+    <footer></footer>
+    <script type="text/javascript" src="./javascript/app.js"></script>
+  </body>
+</html>
